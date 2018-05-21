@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Twilio CC Status Callback</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+	// implement resource here
+	gs.info(">> Twilio webhook status url : {0}", request.url);
+	gs.info(">> Twilio webhook status body : {0}", request.body.dataString);
+	
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_snc_cc17_webhook/v1/webhook_handler/twilio_ccStatusCallback</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/twilio_ccStatusCallback</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-21 23:01:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>57d38a98dbd213000e81d100cf9619b0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Twilio CC Status Callback</sys_name>
+        <sys_package display_value="CC17 Working with Webhooks" source="x_snc_cc17_webhook">c1f9d0a4203132007f44eab520e803e3</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CC17 Working with Webhooks">c1f9d0a4203132007f44eab520e803e3</sys_scope>
+        <sys_update_name>sys_ws_operation_57d38a98dbd213000e81d100cf9619b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-21 23:05:15</sys_updated_on>
+        <web_service_definition display_value="webhook handler">e26b7dd0dbd213000e81d100cf96199b</web_service_definition>
+        <web_service_version display_value="v1">98bbbd58db5213000e81d100cf96190c</web_service_version>
+    </sys_ws_operation>
+</record_update>
