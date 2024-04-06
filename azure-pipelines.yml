@@ -19,11 +19,6 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: ServiceNow-DevOps-Server-Change-Acceleration@1
-  inputs:
-    connectedServiceName: 'jitresourcesllcslsdemo8-jit demo-ServiceNow DevOps Service Connection'
-    applicationName: 'demo8'
-
 - task: ServiceNow-DevOps-Server-Job-Notification@1
   inputs:
     connectedServiceName: 'jitresourcesllcslsdemo8-jit demo-ServiceNow DevOps Service Connection'
